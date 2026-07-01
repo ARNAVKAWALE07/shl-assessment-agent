@@ -15,7 +15,7 @@ CATALOG_URL = "https://tcp-us-prod-rnd.shl.com/voiceRater/shl-ai-hiring/shl_prod
 catalog_fetch = CatalogFetch(CATALOG_URL)
 
 
-client = genai.Client(api_key="AQ.Ab8RN6LHAGfKBUlfgNtoazfsDdEiTBmh2sXMFhGj5OfQv_wiEA")
+client = genai.Client(api_key= os.environ.get("GEMINI_API_KEY"))
 
 class Message(BaseModel):
     role: str
