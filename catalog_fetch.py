@@ -15,9 +15,9 @@ class CatalogFetch:
 
         keys_joined = " ".join(keys).lower()
         if "personality" in keys_joined or "behavior" in keys_joined or "comptencies" in keys_joined:
-            return "p"
+            return "P"
         if "ability" in keys_joined or "aptitude" in keys_joined or "cognitive" in keys_joined:
-            return "C"
+            return "A"
         return "K" # skill/ knowledge default
     
     def load_and_clean_from_url(self, json_url: str):
